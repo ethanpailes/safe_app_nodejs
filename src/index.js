@@ -2,6 +2,7 @@
 const App = require('./app');
 const autoref = require('./helpers').autoref;
 const version = require('../package.json').version;
+const lib = require('./native/lib');
 
 /**
 * @typedef {Object} AppInfo
@@ -62,5 +63,6 @@ function fromAuthURI(appInfo, authUri) {
 module.exports = {
   VERSION: version,
   initializeApp,
-  fromAuthURI
+  fromAuthURI,
+  lib
 };

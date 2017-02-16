@@ -1,5 +1,5 @@
 const createSAFEApp = require('../src/').initializeApp;
-const lib = require('../src/native/lib'); // FIXME: url opening should be exposed differently!
+const lib = require('../src').lib;
 
 const appInfo = {
 	'id': 'net.maidsafe.examples.node-js-test-app',
